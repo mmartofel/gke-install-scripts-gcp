@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: probes
+  labels:
+    app: probes
+    app.kubernetes.io/component: probes
+    app.kubernetes.io/instance: probes
+spec:
+  ports:
+  - name: http-8080
+    port: 8080
+    targetPort: 8080
+  - name: https-8443
+    port: 8443
+    targetPort: 8443
+  - name: https-8778
+    port: 8778
+    targetPort: 8778
+  selector:
+    deployment: probes
+  type: ClusterIP
+  sessionAffinity: None    

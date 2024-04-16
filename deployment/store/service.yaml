@@ -1,0 +1,17 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: store
+  labels:
+    app: store
+    app.kubernetes.io/component: store
+    app.kubernetes.io/instance: store
+spec:
+  ports:
+  - name: 5432-tcp
+    port: 5432
+    targetPort: 5432
+  selector:
+    app: store
+  type: ClusterIP
+  sessionAffinity: None

@@ -1,0 +1,19 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: frontend
+  labels:
+    app: frontend
+    app.kubernetes.io/component: frontend
+    app.kubernetes.io/instance: frontend
+spec:
+  ports:
+    - name: 4200-tcp
+      protocol: TCP
+      port: 80
+      targetPort: 4200
+  internalTrafficPolicy: Cluster
+  type: LoadBalancer
+  sessionAffinity: None
+  selector:
+    deployment: frontend

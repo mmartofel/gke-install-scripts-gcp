@@ -1,0 +1,11 @@
+resources:
+- ./store/configmap.yaml
+- ./store/deployment.yaml
+- ./store/service.yaml
+- ./front/deployment.yaml
+- ./front/service.yaml
+- ./probes/configmap-postgress.yaml
+- ./probes/configmap-orm.yaml
+- ./probes/configmap-flyway.yaml
+- ./probes/deployment.yaml
+- ./probes/service.yaml
