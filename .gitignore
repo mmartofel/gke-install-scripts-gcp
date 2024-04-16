@@ -1,0 +1,7 @@
+# Exclude files and directories
+
+secret.yaml
+
+googlecloudplatform
+
+
