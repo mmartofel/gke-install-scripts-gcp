@@ -1,3 +1,7 @@
+# Init GCP project to work with
+
+gcloud init
+
 # Required API services
 
 gcloud services enable compute.googleapis.com

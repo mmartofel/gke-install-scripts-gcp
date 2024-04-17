@@ -1,6 +1,5 @@
 
-# export PROJECT=`gcloud config get project`
-export PROJECT=openenv-22t4c
+export PROJECT=`gcloud config get project`
 
 export CLUSTER_NAME=korwin-mikke
 export REGION=europe-central2
