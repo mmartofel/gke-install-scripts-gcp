@@ -1,7 +1,7 @@
 
 export PROJECT=`gcloud config get project`
 
-export CLUSTER_NAME=korwin-mikke
+export CLUSTER_NAME=rhacm-managed
 export REGION=europe-central2
 export ZONE=europe-central2-a
 export NODE_LOCATION=europe-central2-a
